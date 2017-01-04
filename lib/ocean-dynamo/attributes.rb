@@ -124,7 +124,7 @@ module OceanDynamo
       if fields.has_key?(attr_name)
         @attributes[attr_name]
       else
-        raise ActiveModel::MissingAttributeError, "can't read unknown attribute '#{attr_ name}"
+        raise ActiveModel::MissingAttributeError, "can't read unknown attribute '#{attr_name}"
       end
     end
 
