@@ -1,3 +1,9 @@
+== v1.3.1
+
+* Missing attribute names flagged correctly. Thanks to Eric Fields who contributed the
+  correction.
+* Record locking info added to the Feature section.
+
 == v1.3.0
 
 * :datetime attributes now can be set to string values, which transparently triggers a 
