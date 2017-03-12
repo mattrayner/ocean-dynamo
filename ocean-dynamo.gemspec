@@ -44,9 +44,9 @@ ocean-dynamo is used as a central component: http://wiki.oceanframework.net
 "
 
   s.required_ruby_version = '>= 2.0.0'
-  s.license = 'MIT'
+  s.license = 'Apache-2.0'
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["LICENSE", "Rakefile", "README.rdoc"]
 
   
   s.add_dependency "aws-sdk", '~> 2' 
