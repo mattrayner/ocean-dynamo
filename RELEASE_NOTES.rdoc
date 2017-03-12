@@ -1,3 +1,8 @@
+== v1.4.0
+
+* Rails 5.0.x is now supported. Rails 5.1.0 (currently in beta) will require a couple 
+  of changes.
+
 == v1.3.1
 
 * Missing attribute names flagged correctly. Thanks to Eric Fields who contributed the

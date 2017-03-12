@@ -3,7 +3,8 @@
 OceanDynamo is a massively scalable Amazon DynamoDB near drop-in replacement for 
 ActiveRecord.
 
-OceanDynamo requires Ruby 2.0 and Ruby on Rails 4.0.0 or later.
+OceanDynamo requires Ruby 2.0 and Ruby on Rails 4.0.0 or later. Rails 5.0.x is supported,
+but 5.1 will require a couple of changes.
 
 {<img src="https://badge.fury.io/rb/ocean-dynamo.png" alt="Gem Version" />}[http://badge.fury.io/rb/ocean-dynamo]
 

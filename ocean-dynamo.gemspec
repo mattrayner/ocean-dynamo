@@ -50,10 +50,10 @@ ocean-dynamo is used as a central component: http://wiki.oceanframework.net
 
   
   s.add_dependency "aws-sdk", '~> 2' 
-  s.add_dependency "activemodel", "~> 4"
-  s.add_dependency "activesupport", "~> 4"
+  s.add_dependency "activemodel", ">= 4"
+  s.add_dependency "activesupport", ">= 4"
 
-  s.add_development_dependency "rails", "~> 4"
+  s.add_development_dependency "rails", "~> 5"
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "rspec-rails"
   s.add_development_dependency "simplecov"
