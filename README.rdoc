@@ -30,6 +30,8 @@ OceanDynamo is fully usable as an ActiveModel and can be used by Rails
 controllers. Thanks to its structural similarity to ActiveRecord, OceanDynamo works 
 with FactoryGirl.
 
+OceanDynamo supports optimistic record locking via a combination of DynamoDB conditional 
+writes and atomic updates. This is activated by default.
 
 === Current State
 
@@ -48,13 +50,10 @@ with FactoryGirl.
 
 === Current use
 
-OceanDynamo is used as a central component in Ocean, a Rails framework and development 
-pipeline for creating massively scalable HATEOAS microservice SOAs in the cloud.
+OceanDynamo is used as a central component in Ocean, a Rails framework and development,
+testing, and production pipeline for creating massively scalable HATEOAS microservice 
+SOAs in the cloud.
 * http://wiki.oceanframework.net
-
-Ocean uses OceanDynamo to implement highly scalable job queues and authentication. 
-It will be used increasingly as features are added to OceanDynamo and will eventually 
-replace all ActiveRecord tables in Ocean. 
 
 However, OceanDynamo can of course also be used stand-alone.
 
@@ -185,6 +184,7 @@ is required as the Topic class itself has a +belongs_to+ relation and thus has
 a composite key. This must be declared in the child class as it needs to know
 how to retrieve its parent.
 
+
 === Restrictions
 
 Restrictions for +belongs_to+ tables: 
@@ -198,6 +198,7 @@ Restrictions for +has_many+ tables:
 
 These restrictions allow OceanDynamo to implement the +has_many+ / +belongs_to+ 
 relation in a very efficient and massively scalable way. 
+
 
 === Implementation
 
